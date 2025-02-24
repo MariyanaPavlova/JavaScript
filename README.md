@@ -1,3 +1,3 @@
 # JavaScript Front-End
- SoftUni course
+Learning JavaScript course from  SoftUni
 
