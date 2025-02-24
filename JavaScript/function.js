@@ -1,3 +1,24 @@
+//3 синтаксиса
+//Function declaration
+function log(){
+    console.log("Some text");
+}
+
+//Function expression
+cosnt log2 = function(){
+    let name = "Gosho";
+    console.log("Some text 2");
+}
+
+//Arrow function
+const log3 = () => console.log("Some text3");
+
+//Function invokation
+log();
+log2();
+log3();
+
+------------------
 //Ако 1 функция няма return връща undefined
 
 sumNumbers(2,5);
@@ -10,7 +31,6 @@ let sumNumbers = function(first, second){
 function sumNumbers(first, second){
     console.log(first + second)
 }
-
 
 
 function sumOfTwo(first, second){
