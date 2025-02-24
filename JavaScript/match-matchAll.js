@@ -12,6 +12,7 @@ console.log(str.match(regexGlobal));
 
 
 //mathcAll() винаги глобален флаг g , но винаги връща индекс и входен стринг на reg
+//връща Iterator съдържащ обект със съвпаденията
 const str1 = "Hello hello world";
 const regex1 = /hello/gi;
 const matches = str1.matchAll(regex1);
