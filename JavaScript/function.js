@@ -1,7 +1,8 @@
 //3 синтаксиса
 //Function declaration
 function log(){
-    console.log("Some text");
+    console.log("Some text");//принтиране в конзолата
+    //тук функцията ще принтира текста в конзолата, но ще върне р-т undefined
 }
 
 //Function expression
