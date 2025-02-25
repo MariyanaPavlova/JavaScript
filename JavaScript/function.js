@@ -34,7 +34,7 @@ function sumNumbers(first, second){
     console.log(first + second)
 }
 
-
+//Returna спира изплънениено ф-ята + връща ст-т, ако няма return резултата от ф-ята ще е undefined
 function sumOfTwo(first, second){
     return first + second  
     console.log()   //!!! След return кода е недостъпен      
@@ -46,8 +46,10 @@ function finalSum(sum, last){
 //тук отива резултата от retun-a
 finalSum(sumOfTwo(5,10), 20)
 
+//може да се използва директно в експрешън
+let total = getPrice() * quantity * 1.20
 
-
+//
 function demo(){
     return 5;
 }
