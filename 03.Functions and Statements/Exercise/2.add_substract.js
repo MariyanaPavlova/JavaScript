@@ -18,7 +18,7 @@ console.log(addSubstract(1, 17, 30))
 function smallestNum(a, b, c){
 
     const sum = (a, b) => a + b
-    const substract = (z, c) => a - b
+    const substract = (z, c) => z - c
     
     const result = substract(sum(a,b), c)
 
