@@ -24,9 +24,9 @@ function loadingBar(n) {
         console.log(`100% Complete!`);
     } else{
         let percent = '%'.repeat(n/10);
-        let dots = ('.').repeat(10-percent.length);
+        let dots = ('.').repeat(percent.length);
         
-        console.log(`${number}% [${percent}${dots}]`);
+        console.log(`${n}% [${percent}${dots}]`);
         console.log('Still loading...')
     }
   
