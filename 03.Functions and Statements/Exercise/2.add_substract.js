@@ -15,16 +15,14 @@ console.log(addSubstract(23, 6, 10))
 console.log(addSubstract(1, 17, 30))
 
 
+function smallestNum(a, b, c){
 
-// function smallestNum(a, b, c){
+    const sum = (a, b) => a + b
+    const substract = (a, b) => a - b
+    
+    const result = substract(sum(a,b), c)
 
-//     let sum = (a, b) => {
-//         return a + b 
-//     }
-     
-//     let result = sum(a,b) - c;
+    console.log(result)
 
-//     console.log(result)
-
-// }
-// smallestNub(23, 6, 10)
+}
+smallestNum(23, 6, 10)
