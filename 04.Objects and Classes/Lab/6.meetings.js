@@ -7,7 +7,9 @@ function meetings(array){
 
         if (meetings[day]){
             console.log(`Conflict on ${day}!`)
+
         } else {
+            //  (! meetings.hasOwnProperty(day)){
             meetings[day] = name;
             console.log(`Scheduled for ${day}`)
         }
