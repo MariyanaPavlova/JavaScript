@@ -2,9 +2,7 @@ function addressBook(input) {
 
     let dict = {}
     for (let i of input){
-        let tokens = i.split(":")
-        let name = tokens[0]
-        let address = tokens[1]
+        let [name, address] = i.split(":")
         dict[name] = address
     }
     let peopleName = Object.entries(dict) 
