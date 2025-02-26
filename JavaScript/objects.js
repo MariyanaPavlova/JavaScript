@@ -14,16 +14,20 @@ function objectsDemo() {
     
     console.log(person);
 
-    let keys = Object.keys(person); //връща всички ключове
-    let values = Object.values(person); //връща всички ст-ти
-    let entries = Object.keys(person); //връща масив, т.е матрица от []
+    let keys = Object.keys(person); //връща всички ключове  // ['name', 'age']
+    let values = Object.values(person); //връща всички ст-ти  // ['Tom', 5]
+    let entries = Object.entries(person); //връща масив, т.е матрица от []   // [['name', 'Tom'], ['age', 5]]
     //и трите връщат масив[]
 
-    console.log(keys);
-    console.log(values);
-    console.log(entries);
+    function cityInfo(city) {
+         let entries = Object.entries(city);
+         for (let [ key, value ] of entries) {
+                console.log(`${key} -> ${value}`);
+ }
 }
-objectsDemo();
+
+}
+
 
 //JSON -a носи само данни, няма функции с себе си
 // За пренос на данни, XML също пренася данни, но е по-тежък, файла е по-голям заради таговете
