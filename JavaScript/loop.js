@@ -13,10 +13,12 @@ for (let x of cars) {
 }
 
 //FOR IN - loops through the properties of an Object:
-//минава през key
+//минава през key 
+//Ако го използваме за Array ще ни даде просто индексите 0, 1, 2 - за Array For of
+//For of не може да се използва за Objеct 
 const person = {fname:"John", lname:"Doe", age:25};
 let text = "";
-for (let x in person) {
+for (let x in person) {    // === for (let x in Object.key(person))
   text += person[x];
 }
 
