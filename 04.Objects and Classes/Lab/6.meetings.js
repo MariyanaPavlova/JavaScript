@@ -5,11 +5,11 @@ function meetings(array){
     for (let i of array){
         const[day,name] = i.split(' ');
 
-        if (!meetings.hasOwnProperty(day)){
+        if (meetings[day]){
+            console.log(`Conflict on ${day}!`)
+        } else {
             meetings[day] = name;
             console.log(`Scheduled for ${day}`)
-        } else {
-            console.log(`Conflict on ${day}!`)
         }
     }
     Object.keys(meetings).forEach((day) => {
