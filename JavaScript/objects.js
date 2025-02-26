@@ -40,9 +40,18 @@ let obj = {
     age:30,
     text:'hello'
 }
-for (const key in obj){
+for (const key in obj){     //==== for (const key of Object.key(obj)
     console.log(key)
     console.log(obj[key]);
 }
 }
 keyOb();
+
+function objConverter(json) {
+     let person= JSON.parse(json);
+     let entries = Object.entries(person);
+    
+     for (let [key, value] of entries) {
+         console.log(`${key}: ${value}`);
+ }
+}
