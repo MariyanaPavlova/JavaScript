@@ -12,8 +12,7 @@ function cats(input) {
 
     let cats = []
     for (let i of input) {
-        let token = i.split(" ")
-        let [name, age] = token
+        let [name, age] = i.split(" ")
         let newCat = new Cat(name, age)
         cats.push(newCat)     
     }
