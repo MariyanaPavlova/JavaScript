@@ -1,8 +1,9 @@
 function towns(input) {
-    let town = {}
+    let towns = [];
+    //let town = {};
 
     for (let i of input) {
-      // let spliti = i.split(" | ")
+        // let spliti = i.split(" | ")
 
         // town.town = spliti[0]
         // town.latitude = Number(spliti[1]).toFixed(2)
@@ -15,9 +16,10 @@ function towns(input) {
             latitude: Number(latitude).toFixed(2),
             longitude: Number(longitude).toFixed(2),
         }
+        towns.push(town);
 
 
-        console.log(town);
+        console.log(towns);
     }
 }
 
