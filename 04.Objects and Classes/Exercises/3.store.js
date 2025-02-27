@@ -8,7 +8,7 @@ function store(stock, delivery) {
 
     for (let i = 0; i < delivery.length; i += 2) {
         let prod = delivery[i];
-
+        //!storeProd[prod]
         if (!storeProd.hasOwnProperty(prod)) {
           storeProd[prod] = 0;
         }    
