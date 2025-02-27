@@ -2,14 +2,22 @@ function towns(input) {
     let town = {}
 
     for (let i of input) {
-        let spliti = i.split(" | ")
+      // let spliti = i.split(" | ")
 
-        town.town = spliti[0]
-        town.latitude = Number(spliti[1]).toFixed(2)
-        town.longitude = Number(spliti[2]).toFixed(2)
+        // town.town = spliti[0]
+        // town.latitude = Number(spliti[1]).toFixed(2)
+        // town.longitude = Number(spliti[2]).toFixed(2)
         
-        console.log(town)
+        const [townName, latitude, longitude] = i.split(" | ")
+        
+        const town = {
+            town: townName,
+            latitude: Number(latitude).toFixed(2),
+            longitude: Number(longitude).toFixed(2),
+        }
 
+
+        console.log(town);
     }
 }
 
