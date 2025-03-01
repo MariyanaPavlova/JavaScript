@@ -5,6 +5,18 @@ for (let i = 0; i < 5; i++) {
 
 //-CTRL + / {бутона до шифт}
 
+****************
+//WHILE
+// initialize variable i
+let i = 1;
+
+// loop runs until i is less than 4
+while (i < 4) {
+    console.log(i);
+    i += 1;
+}
+
+****************
 // FOR OF loops through the values of an iterable object.
 //const cars = ["BMW", "Volvo", "Mini"];
 let text = "";
