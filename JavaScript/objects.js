@@ -7,15 +7,22 @@ const objectName = {
     keyN: valueN
 };
 
-const cat = {
-    name: "Luna",
+//*************
+const person = {
+    name: "Bobby",
+    hobby: "Dancing",
 };
 
-// access property
-console.log(cat["name"]);
+// access property Dot notation
+console.log(person.name); 
+// access property Bracett notation
+console.log(person["name"]);
+// modify property
+person.hobby = "Singing"; // Output: { name: 'Bobby', hobby: 'Singing' }
+// add properties
+person.No = 14;
+person.gender = "Male"; //Output: { name: 'Bobby', hobby: 'Singing', No: 14, gender: 'Male' }
 
-
-// Output: Luna
 
 
 
