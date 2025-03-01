@@ -1,3 +1,33 @@
+//Object - key-value pairs.
+//syntax
+const objectName = {
+    key1: value1,
+    key2: value2,
+    ...,
+    keyN: valueN
+};
+
+const cat = {
+    name: "Luna",
+};
+
+// access property
+console.log(cat["name"]);
+
+
+// Output: Luna
+
+
+
+
+
+
+
+
+
+
+
+
 //for - loops through a block of code a number of times - също като for of но функционален начин
 //for/in - loops through the properties of an object - за обхождане на обекти
 //for/of - loops through the values of an iterable object - за обхождане на масиви
