@@ -22,8 +22,23 @@ person.hobby = "Singing"; // Output: { name: 'Bobby', hobby: 'Singing' }
 // add properties
 person.No = 14;
 person.gender = "Male"; //Output: { name: 'Bobby', hobby: 'Singing', No: 14, gender: 'Male' }
+// delete object property
+delete person.gender
 
+//********************
+const person = {
+    name: "Bob",
+    age: 30,
 
+    // use function as value
+    greet: function () {
+        console.log("Bob says Hi!");
+    }
+
+};
+
+// call object method
+person.greet();  // Bob says Hi!
 
 
 
