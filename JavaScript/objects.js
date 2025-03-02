@@ -1,4 +1,4 @@
-//Object - key-value pairs.
+//Object - variable that can store multiple data in key-value pairs.
 //syntax
 const objectName = {
     key1: value1,
@@ -26,21 +26,50 @@ person.gender = "Male"; //Output: { name: 'Bobby', hobby: 'Singing', No: 14, gen
 delete person.gender
 
 //********************
-const person = {
-    name: "Bob",
-    age: 30,
+// dog object
+const dog = {
+    name: "Rocky",
 
-    // use function as value
-    greet: function () {
-        console.log("Bob says Hi!");
+    // bark method
+    bark: function () {
+        console.log("Woof!");
     }
 
 };
+// access method
+dog.bark();  // Output: Woof!
 
-// call object method
-person.greet();  // Bob says Hi!
+**************************************
 
+//THIS - this keyword in an object method to access a property of the same object. For example
+// person object
+const person = {
+    name: "John",
+    age: 30,
 
+    // method
+    introduce: function () {
+        console.log(`My name is ${this.name} and I'm ${this.age} years old.`);
+
+    }
+};
+
+// access the introduce() method
+person.introduce(); // Output: My name is John and I'm 30 years old.
+
+---------
+//You can add more methods to a JavaScript object even after we've defined it
+// student object
+let student = {
+    name: "John"
+};
+
+// add new method
+student.greet = function () {
+    console.log("Hello");
+};
+// access greet() method
+student.greet(); // Output: Hello
 
 
 
