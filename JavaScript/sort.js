@@ -1,6 +1,8 @@
+
 function arrSort() {
     
     let arr = [5000, 1000, 1500, 200];
+    let sortN = arr.sort() //ще ги сортира като стринг 1000,1500,200,5000
     let numb = arr.sort((a, b) => {
         return b - a
     });
