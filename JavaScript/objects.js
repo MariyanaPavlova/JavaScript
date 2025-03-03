@@ -8,11 +8,17 @@ const objectName = {
 };
 
 //*************
-//create person object
+//create person object : Object Literal
 const person = {
     name: "Bobby", //properties
     hobby: "Dancing",
 };
+
+//create person object : Using the new Keyword
+const person = new Object();
+    person.name: "Bobby", //add properties
+    person.hobby: "Dancing",
+
 
 // access property Dot notation
 console.log(person.name); 
